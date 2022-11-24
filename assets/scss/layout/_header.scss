@@ -1,0 +1,51 @@
+.header{
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  font-weight: 400;
+  color: var($color-gray-150);
+}
+.logo__hamburger{
+  margin: 0 auto;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 25px;
+  & a:nth-child(1){
+    font-weight: 600;
+  }
+  & a{
+    transition: .6s all;
+    &:hover{
+      transform: scale(1.1);
+      color: var($color-gray-100);
+    }
+  }
+}
+.sign-in{
+  background: var($color-green-250);
+  
+}
+.hamburger {
+  display: none;
+  margin-left: auto;
+}
+.nav__collapse{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+.header__btns{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+@media screen and (max-width: 768px){
+  .hamburger{
+    display: block;
+  }
+}
