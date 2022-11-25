@@ -41,6 +41,10 @@
   margin: 0 auto;
 }
 
+.bg {
+  background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -130,10 +134,16 @@
   padding: 15px 41px;
   background: #02897A;
   border-radius: 4px;
+  border: 1px solid #02897A;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+  transition: 0.6s all;
+}
+.banner-content__buttons a:hover {
+  background: #FFFFFF;
+  color: #02897A;
 }
 .banner-content__buttons button {
   display: flex;
