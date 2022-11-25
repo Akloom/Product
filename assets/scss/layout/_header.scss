@@ -1,13 +1,11 @@
 .header{
   display: flex;
   align-items: center;
-  margin: 20px auto;
+
   font-weight: 400;
   color: var($color-gray-150);
 }
-.logo__hamburger{
-  margin: 0 auto;
-}
+
 .nav{
   display: flex;
   align-items: center;
