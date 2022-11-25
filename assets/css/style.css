@@ -41,15 +41,22 @@
   margin: 0 auto;
 }
 
+.bg {
+  background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+}
+
 .header {
+  background: rgb(240, 240, 240);
+  position: sticky;
+  top: 0;
+}
+.header-content {
   display: flex;
   align-items: center;
   flex-direction: row;
   padding: 20px;
   font-weight: 400;
   color: #22343D;
-  position: sticky;
-  top: 0;
 }
 
 .nav {
@@ -101,7 +108,7 @@
   .hamburger {
     display: block;
   }
-  .header {
+  .header-content {
     background: #fff;
     box-shadow: 0 0 15px rgb(230, 230, 230);
     position: fixed;
@@ -150,6 +157,193 @@
   }
   .theme {
     margin: 0 auto;
+  }
+}
+.banner {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+.banner-content h1 {
+  max-width: 518px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #22343D;
+}
+.banner-content p {
+  margin-top: 18px;
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #22343D;
+}
+.banner-content__buttons {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.banner-content__buttons a {
+  display: inline-flex;
+  padding: 15px 41px;
+  background: #02897A;
+  border-radius: 4px;
+  border: 1px solid #02897A;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.banner-content__buttons a:hover {
+  background: #FFFFFF;
+  color: #02897A;
+}
+.banner-content__buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.banner-content__buttons button span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #02897A;
+  text-decoration: underline;
+}
+.banner-image {
+  max-width: 600px;
+}
+.banner-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .banner-content__buttons a {
+    padding: 15px 21px;
+    text-align: center;
+  }
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 65px;
+  padding-bottom: 90px;
+}
+.about-us__title {
+  max-width: 530px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #22343D;
+}
+.about-us-cards-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 45px;
+}
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+}
+.about-us-card__icon1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #02897A;
+  border-radius: 19px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.about-us-card__icon1 img {
+  position: absolute;
+  top: 16px;
+  left: 19px;
+}
+.about-us-card__icon2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #4D8DFF;
+  border-radius: 19px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.about-us-card__icon2 img {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+.about-us-card__icon3 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #740A76;
+  border-radius: 19px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.about-us-card__icon3 img {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+.about-us-card__icon4 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #F03E3D;
+  border-radius: 19px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.about-us-card__icon4 img {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+}
+.about-us-card h1 {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #22343D;
+}
+.about-us-card p {
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.about-us__btn {
+  padding: 15px 33px;
+  border: solid 1px #02897A;
+  background: #02897A;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 920px) {
+  .about-us {
+    padding: 30px;
   }
 }
 

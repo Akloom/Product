@@ -23,8 +23,12 @@
 .container{
   max-width: 1280px;
   margin: 0 auto;
-  
 }
 
+.bg{
+  background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+}
 
 @import './layout/_header.scss';
+@import './include/banner';
+@import './include/about-us';
