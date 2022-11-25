@@ -80,3 +80,10 @@
     padding: 30px;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .banner-content__buttons a{
+    padding: 15px 21px;
+    text-align: center;
+  }
+}
