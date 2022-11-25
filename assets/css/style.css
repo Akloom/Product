@@ -44,19 +44,15 @@
 .header {
   display: flex;
   align-items: center;
-  margin: 20px auto;
+  padding: 20px;
   font-weight: 400;
-  color: var(#22343D);
-}
-
-.logo__hamburger {
-  margin: 0 auto;
+  color: #22343D;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
   gap: 25px;
 }
 .nav a:nth-child(1) {
@@ -83,7 +79,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .header__btns {
