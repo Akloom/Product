@@ -1,0 +1,75 @@
+.banner {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      max-width: 518px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      color: $color-gray-150;
+    }
+
+    p {
+      margin-top: 18px;
+      max-width: 460px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color-gray-150;
+    }
+
+    &__buttons {
+      margin-top: 45px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      a {
+        display: inline-flex;
+        padding: 15px 41px;
+        background: $color-green-250;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-white-50;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: $color-green-250;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &-image{
+    max-width: 600px;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner{
+    flex-direction: column;
+    padding: 30px;
+  }
+}

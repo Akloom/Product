@@ -1,4 +1,6 @@
-@import './_var.scss';
+@import './var';
+@import './fonts';
+@import './mixin';
 
 *{
   margin: 0;
@@ -13,11 +15,15 @@
   font-weight: inherit;
   font-family: inherit;
 }
+
 .wrapper{
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
 }
+
 .container{
   max-width: 1280px;
   margin: 0 auto;
 }
+
 @import './layout/_header.scss';
+@import './include/banner';
