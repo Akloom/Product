@@ -45,7 +45,18 @@
   background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
 }
 
-<<<<<<< HEAD
+.orange-bg {
+  background: #FF9900;
+}
+
+.red-bg {
+  background: #F03E3D;
+}
+
+.blue-bg {
+  background: #4D8DFF;
+}
+
 .header {
   background: rgb(240, 240, 240);
   position: sticky;
@@ -160,24 +171,11 @@
     margin: 0 auto;
   }
 }
-=======
-.orange-bg {
-  background: #FF9900;
-}
-
-.red-bg {
-  background: #F03E3D;
-}
-
-.blue-bg {
-  background: #4D8DFF;
-}
-
->>>>>>> fdf136b7d214052916566b3dd34bd269b45d8d1b
 .banner {
-  margin-top: 25px;
+  padding-top: 25px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .banner-content {
@@ -243,7 +241,7 @@
 
 @media screen and (max-width: 920px) {
   .banner {
-    flex-direction: column;
+    justify-content: center;
     padding: 140px 30px 30px 30px;
   }
 }
@@ -286,6 +284,7 @@
   background: #02897A;
   border-radius: 19px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -1;
 }
 .about-us-card__icon1 img {
   position: absolute;
@@ -299,6 +298,7 @@
   background: #4D8DFF;
   border-radius: 19px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -1;
 }
 .about-us-card__icon2 img {
   position: absolute;
@@ -312,6 +312,7 @@
   background: #740A76;
   border-radius: 19px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -1;
 }
 .about-us-card__icon3 img {
   position: absolute;
@@ -325,6 +326,7 @@
   background: #F03E3D;
   border-radius: 19px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -1;
 }
 .about-us-card__icon4 img {
   position: absolute;
@@ -365,6 +367,7 @@
 @media screen and (max-width: 920px) {
   .about-us {
     padding: 30px;
+    justify-content: center;
   }
 }
 .management {
@@ -449,6 +452,7 @@
 @media screen and (max-width: 920px) {
   .management {
     margin-top: 40px;
+    justify-content: center;
     padding: 30px;
     gap: 30px;
   }
@@ -524,6 +528,7 @@
 @media screen and (max-width: 920px) {
   .support {
     margin-top: 40px;
+    justify-content: center;
     padding: 30px;
     gap: 30px;
   }
@@ -616,6 +621,7 @@
 @media screen and (max-width: 920px) {
   .collaborative {
     margin-top: 40px;
+    justify-content: center;
     padding: 30px;
     gap: 30px;
   }
