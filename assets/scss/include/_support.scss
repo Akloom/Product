@@ -1,9 +1,10 @@
-.management {
+.support {
   margin-top: 150px;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  gap: 84px;
+  gap: 94px;
 
   &-content {
     max-width: 486px;
@@ -37,41 +38,20 @@
       margin-top: 30px;
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 30px;
 
-      &-accessory-makers {
+      &-support {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        align-items: flex-start;
+        gap: 30px;
 
-        h1 {
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 26px;
-          color: $color-gray-150;
+        &__check-icon {
+          padding: 12px 10px;
+          border-radius: 14px;
         }
 
         p {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 26px;
-          color: $color-gray-150;
-        }
-      }
-
-      &-altertionist {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-
-        h1 {
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 26px;
-          color: $color-gray-150;
-        }
-
-        p {
+          max-width: 365px;
           font-weight: 400;
           font-size: 16px;
           line-height: 26px;
@@ -81,7 +61,7 @@
     }
   }
 
-  &-image {
+  &-image{
     max-width: 540px;
 
     img{
@@ -91,17 +71,17 @@
 }
 
 @media screen and (max-width: 920px) {
-  .management{
+  .support{
     margin-top: 40px;
     padding: 30px;
     gap: 30px;
   }
 
-  .management-content__desc{
+  .support-content__desc{
     margin-top: 10px;
   }
 
-  .management-content__about{
+  .support-content__about{
     margin-top: 10px;
   }
 }
