@@ -232,5 +232,93 @@
     padding: 30px;
   }
 }
+.management {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 84px;
+}
+.management-content {
+  max-width: 486px;
+  display: flex;
+  flex-direction: column;
+}
+.management-content__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+}
+.management-content__title {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343D;
+}
+.management-content__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.management-content__about {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.management-content__about-accessory-makers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.management-content__about-accessory-makers h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.management-content__about-accessory-makers p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.management-content__about-altertionist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.management-content__about-altertionist h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.management-content__about-altertionist p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.management-image {
+  max-width: 540px;
+}
+.management-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .management {
+    margin-top: 40px;
+    padding: 30px;
+    gap: 30px;
+  }
+  .management-content__about {
+    margin-top: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
