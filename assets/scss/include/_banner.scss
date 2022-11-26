@@ -50,6 +50,7 @@
       }
 
       button {
+        cursor: pointer;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -77,7 +78,7 @@
 @media screen and (max-width: 920px) {
   .banner{
     flex-direction: column;
-    padding: 30px;
+    padding: 140px 30px 30px 30px;
   }
 }
 

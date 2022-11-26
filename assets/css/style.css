@@ -207,6 +207,7 @@
   color: #02897A;
 }
 .banner-content__buttons button {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -228,7 +229,7 @@
 @media screen and (max-width: 920px) {
   .banner {
     flex-direction: column;
-    padding: 30px;
+    padding: 140px 30px 30px 30px;
   }
 }
 @media screen and (max-width: 440px) {
@@ -339,6 +340,11 @@
   line-height: 24px;
   color: #FFFFFF;
   text-transform: uppercase;
+  transition: 0.6s all;
+}
+.about-us__btn:hover {
+  background: #FFFFFF;
+  color: #02897A;
 }
 
 @media screen and (max-width: 920px) {
