@@ -41,9 +41,11 @@
   background: $color-blue-50;
 }
 
+@import './layout/_header.scss';
 @import './include/banner';
 @import './include/about-us';
 @import './include/management';
 @import './include/support';
 @import './include/collaborative';
 @import './include/strategies';
+@import './include/comments';
