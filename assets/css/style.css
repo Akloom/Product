@@ -212,11 +212,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.6s all;
 }
 .banner-content__buttons a:hover {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #02897A;
 }
 .banner-content__buttons button {
@@ -355,7 +355,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   transition: 0.6s all;
 }
@@ -630,6 +630,80 @@
   }
   .collaborative-content__about {
     margin-top: 10px;
+  }
+}
+.strategies {
+  display: flex;
+  flex-direction: column;
+}
+.strategies h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+}
+.strategies p {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+.strategies-row {
+  margin-top: 33px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
+  gap: 32px;
+}
+.strategies-card {
+  max-width: 348px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: solid 1px #e6e6e6;
+}
+.strategies-card__image {
+  max-width: 348px;
+}
+.strategies-card__image img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+.strategies-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.strategies-card__content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #22343D;
+}
+.strategies-card__content h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343D;
+  transition: 0.6s all;
+}
+
+.strategies-card:hover .strategies-card__content h1 {
+  color: #02897A;
+}
+
+@media screen and (max-width: 920px) {
+  .strategies {
+    padding: 30px;
+  }
+  .strategies-row {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .strategies-card__content h1 {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
