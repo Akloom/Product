@@ -726,7 +726,7 @@
     padding: 30px;
   }
   .strategies-row {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
   .strategies-card__content h1 {
     font-size: 20px;
@@ -854,6 +854,7 @@
 .price__card__row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 100px;
   flex-wrap: wrap;
 }
@@ -954,23 +955,28 @@
 
 .review__row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
 }
 
 .review {
+  max-width: 327px;
+}
+.review-content {
   border: 1px solid #DEDEDE;
   border-radius: 5px;
   padding: 25px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: start;
   text-align: start;
   gap: 12px;
-  width: 300px;
+  width: 100%;
   transition: 0.6s all;
 }
-.review:hover {
+.review-content:hover {
   transform: scale(1.1);
 }
 .review-info {
@@ -1016,7 +1022,10 @@
   width: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
+  .review-block {
+    padding: 30px;
+  }
   .comment__row {
     width: 50%;
     margin: 0 auto;
@@ -1026,6 +1035,8 @@
 .promotion {
   margin: 50px 200px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 50px;
   background: #02897A;
   border-radius: 32px;
@@ -1065,20 +1076,20 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .promotion {
-    margin: 50px auto;
-  }
-  .promotion__img img {
-    display: none;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
   }
 }
 .footer {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
   margin-top: 150px;
   display: flex;
-  gap: 150px;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 14px;
   line-height: 35px;
@@ -1092,14 +1103,15 @@
   gap: 16px;
 }
 .footer__send {
+  max-width: 385px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .footer__comment-area {
   border: 1px solid #4D8DFF;
-  max-width: 100%;
-  padding: 5px 80px 5px 0;
+  width: 100%;
+  padding: 10px 15px;
   border-radius: 4px;
   display: flex;
   align-items: start;
@@ -1117,12 +1129,13 @@
   color: #22343D;
 }
 .footer__nav {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  gap: 100px;
+  gap: 150px;
 }
 .footer__bg {
   display: flex;
-  margin: 0 100px;
   flex-direction: column;
   gap: 30px;
   align-items: center;
@@ -1150,17 +1163,21 @@
   gap: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .footer {
+    margin-top: 20px;
     gap: 50px;
     flex-direction: column;
   }
   .footer__nav {
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
   .footer__comment-area {
-    width: 50%;
+    width: 100%;
   }
   .feedback {
     flex-direction: column;

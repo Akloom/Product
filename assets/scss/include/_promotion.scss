@@ -1,6 +1,8 @@
 .promotion {
   margin: 50px 200px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 50px;
   background: $color-green-250;
   border-radius: 32px;
@@ -46,13 +48,10 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .promotion {
-    margin: 50px auto;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
   }
-
-  .promotion__img img {
-    display: none;
-  }
-
 }
