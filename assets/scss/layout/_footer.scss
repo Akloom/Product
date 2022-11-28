@@ -1,0 +1,86 @@
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: flex;
+  gap: 150px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  &__logo{
+    width: 160px;
+  }
+  &__share-icons{
+    display: flex;
+    gap: 16px;
+  }
+  &__send{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__comment-area {
+    border: 1px solid $color-blue-50;
+    width: max-content;
+    padding: 5px 80px 5px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: start;
+  }
+  &__column {
+    display: flex;
+    gap: 3px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-gray-150;
+  }
+  &__nav{
+    display: flex;
+    gap: 100px;
+  }
+  &__bg {
+    display: flex;
+    margin: 0 100px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  &__feedback-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 15px;
+    width: max-content;
+    background: $color-green-250;
+    color: $color-white-50;
+    border-radius: 4px;
+  }
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 50px ;
+  }
+.feedback {
+    flex-direction: row;
+    align-items: center;
+  }
+}

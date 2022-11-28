@@ -1,51 +1,139 @@
-.header{
-  display: flex;
-  align-items: center;
-
-  font-weight: 400;
-  padding: 20px;
-  font-weight: 400;
-  color: $color-gray-150;
+.header__bg {
+  box-shadow: 0 0 15px rgb(230, 230, 230);
+  background: $color-white-50;
 }
 
-.nav{
+.header {
+  background: rgb(240, 240, 240);
+  position: sticky;
+  top: 0;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    flex-direction: row;
+    padding: 20px;
+    font-weight: 400;
+    color: $color-gray-150;
+  }
+}
+
+.nav {
   display: flex;
   align-items: center;
   margin-left: auto;
   gap: 25px;
-  & a:nth-child(1){
-    font-weight: 600;
-  }
-  & a{
+
+  & a {
     transition: .6s all;
-    &:hover{
-      transform: scale(1.1);
-      color: var($color-gray-100);
+
+    &:hover {
+      color: $color-gray-100;
     }
   }
 }
-.sign-in{
-  background: var($color-green-250);
-  
-}
+
 .hamburger {
   display: none;
   margin-left: auto;
 }
-.nav__collapse{
+
+.nav__collapse {
   display: flex;
   align-items: center;
   gap: 30px;
   margin-left: auto;
 }
-.header__btns{
+
+.header__btns {
   display: flex;
   align-items: center;
   margin: 0 auto;
   gap: 20px;
 }
-@media screen and (max-width: 768px){
-  .hamburger{
+
+.sign-up {
+  padding: 10px 25px;
+  background-color: $color-green-250;
+  border-radius: 4px;
+  color: $color-white-50;
+
+}
+
+.sign-in {
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: 1px solid $color-blue-100;
+}
+
+@media screen and (max-width: 920px) {
+  .hamburger {
     display: block;
+
+  }
+
+  .header {
+    background: $color-white-50;
+
+    .header-content {
+      background: #fff;
+      box-shadow: 0 0 15px rgb(230, 230, 230);
+      position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      top: 0;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: start;
+      margin: 0;
+    }
+
+    .nav__collapse {
+      min-height: 100vh;
+      margin-top: 100px;
+      transition: .4s all;
+      position: absolute;
+      right: -500%;
+      top: 0;
+      color: $color-white-50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sign-in {
+      background: $color-white-50;
+      color: $color-green-250;
+    }
+
+    .sign-up {
+      background: $color-green-250;
+      border: 1px solid $color-white-50;
+      color: $color-white-50;
+    }
+
+    .nav__collapse.is-active {
+      right: 0;
+      top: 0;
+      background: $color-green-250;
+      box-sizing: border-box;
+      padding: 50px 0;
+      max-width: 70%;
+      width: 100%;
+    }
+
+    .header__btns {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .theme {
+      margin: 0 auto;
+    }
   }
 }

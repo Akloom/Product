@@ -1,0 +1,51 @@
+.promotion {
+  margin: 50px 200px;
+  display: flex;
+  padding: 50px;
+  background: $color-green-250;
+  border-radius: 32px;
+  justify-content: space-between;
+
+  &__desc-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__desc {
+    font-weight: 600;
+    font-size: 32px;
+    color: $color-white-50;
+  }
+
+  &__btn {
+    box-sizing: border-box;
+    width: max-content;
+    padding: 15px 35px;
+    background: $color-white-50;
+    color: $color-green-250;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 8px;
+  }
+
+  &__img {
+    max-width: 420px;
+  }
+  &__img img{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .promotion {
+    margin: 50px auto;
+  }
+
+  .promotion__img img {
+    display: none;
+  }
+
+}
