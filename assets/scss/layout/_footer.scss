@@ -7,7 +7,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 35px;
-  flex-wrap: wrap;
   align-items: flex-start;
   &__logo{
     width: 160px;
@@ -16,6 +15,7 @@
     display: flex;
     gap: 16px;
   }
+
   &__send{
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
   }
   &__comment-area {
     border: 1px solid $color-blue-50;
-    width: max-content;
+    max-width: 100%;
     padding: 5px 80px 5px 0;
     border-radius: 4px;
     display: flex;
@@ -78,9 +78,18 @@
 @media screen and (max-width: 768px) {
   .footer {
     gap: 50px ;
+    flex-direction: column;
+    &__nav {
+      display: flex;
+      flex-direction: column;
+    }
+    &__comment-area{
+      width: 50%;
+    }
   }
 .feedback {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
+  
 }
